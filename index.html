@@ -17,11 +17,14 @@
 
     function Header({title}) {
         console.log(title)
-        return <h1>Develop {title}. Preview. Ship. 🚀</h1>
+        return <h1>Develop {title ? title : 'JavaScript'}. Preview. Ship. 🚀</h1>
     }
 
     function HomePage() {
-        return <div><Header title="React"/></div>
+        return <div>
+            <Header title="React"/>
+            <Header/>
+        </div>
     }
 
     const root = ReactDOM.createRoot(app)
