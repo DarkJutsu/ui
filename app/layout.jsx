@@ -1,5 +1,5 @@
 export const metadata = {
-    tile: 'Next.js',
+    title: 'Next.js',
     description: 'Next.js'
 }
 export default function RootLayout({children}) {
