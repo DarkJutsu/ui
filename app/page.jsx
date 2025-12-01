@@ -5,7 +5,7 @@ function Header({title}) {
     return <h1>Develop {title ? title : 'JavaScript'}. Preview. Ship. 🚀</h1>
 }
 
-function HomePage() {
+export function HomePage() {
     const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton']
     const [likes, setLikes] = useState(0)
 
